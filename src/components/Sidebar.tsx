@@ -60,9 +60,6 @@ const itensMenu: ItemMenu[] = [
 ];
 
 function estaAtivo(caminhoAtual: string, href: string): boolean {
-  if (href === "/dashboard") {
-    return caminhoAtual === "/" || caminhoAtual === href || caminhoAtual.startsWith(`${href}/`);
-  }
   return caminhoAtual === href || caminhoAtual.startsWith(`${href}/`);
 }
 
